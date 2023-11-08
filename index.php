@@ -19,7 +19,7 @@
         <label for="menu">
             <div class="menu-icono" id="circle">
                 <i class='bx bx-menu' id="abrir"></i>
-                <i class='bx bx-x' id="cerrar"></i>
+                <i class='bx bx-x' id="cerrar"></i> 
             </div>
         </label>
                 <ul class="menu">
