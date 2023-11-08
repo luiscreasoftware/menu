@@ -4,16 +4,24 @@
     box-sizing: border-box;
 }
 
-body{
+/* body{
     height: 100vh;
     position: relative;
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)),
         url(img/nebula2.gif);
+        url(img/background1.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Poppins",sans-serif;
+} */
+
+body{
+    height: 100vh;
+    position: relative;
+    background-color: black;
     font-family: "Poppins",sans-serif;
 }
 
@@ -25,12 +33,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
-    height: 100px;
+    padding: 0 7%;
+    height: 170px;
 }
 
 .logo{
-    height: 80px;
+    height: 130px;
 }
 
 .menu{
@@ -42,7 +50,8 @@ header{
 .item a{
     margin: 0 15px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
+    line-height: 40px;
     cursor: pointer;
     color: #ffffff;
     text-decoration-line: none;
@@ -84,6 +93,7 @@ label{
 }
 
 .btn{
+    margin-inline: 5px;
     padding: 5px 24px;
     border-radius: 30px;
     background-color: #266BE4;
