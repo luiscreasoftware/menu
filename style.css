@@ -1,0 +1,148 @@
+@import url("https:fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*{
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        url(img/nebula2.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins",sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 100px;
+}
+
+.logo{
+    height: 80px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item a{
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration-line: none;
+}
+
+.item a:hover{
+    color: #fd307a;
+}
+
+#circle {
+    justify-content: center;
+    align-items: center;
+    background: #266BE4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex
+}
+
+.menu-icono .bx{
+    color: #E4ECFC;
+    font-size: 30px;
+    position: absolute;
+    margin: 0 auto; 
+    align-self: center;
+}
+
+#cerrar{
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+    display: none;
+}
+
+.btn{
+    padding: 5px 24px;
+    border-radius: 30px;
+    background-color: #266BE4;
+}
+
+.btn a{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration-line: none;
+}
+
+.btn:hover{
+    background-color: #fd307a;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+        margin: 0;
+    }
+
+    label{
+        
+        display: initial;
+    }
+
+    .menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(
+            rgba(41, 51, 68, 0.850),
+            rgba(41, 51, 68, 0.850));
+        display: none;
+    }
+
+    .item{
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    .btn{
+        width: 100px;
+    }
+
+    #menu:checked ~ .menu{
+        display: initial;
+    }
+
+    #menu:checked ~ label div #abrir{
+        display: none;
+    }
+
+    #menu:checked ~ label div #cerrar{
+        display: initial;
+    }
+
+}
